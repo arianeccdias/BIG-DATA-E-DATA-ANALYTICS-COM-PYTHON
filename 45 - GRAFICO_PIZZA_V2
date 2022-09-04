@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+#definindo os dados
+data = [15,25,25,30,5]
+labels =['Grupo_01', 'Grupo_02', 'Grupo_03', 'Grupo_04', 'Grupo_05']
+
+#definindo a paleta de cores
+colors = sns.color_palette('pastel')[0:5]
+#colors sns.color_palette('tab10')
+
+#cria o gráfico
+plt.pie(data, labels = labels, colors = colors, autopct= '%.0f%%')
+plt.show()
+
+
